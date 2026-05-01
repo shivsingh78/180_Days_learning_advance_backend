@@ -1,7 +1,7 @@
 //Cache Aside 
 // Best for read-heavy apps but first req. slow
 import redis from "redis"
-const client = redis.creteClient()
+const client = redis.createClient()
 
 async function getUser(id){
      let user = await client.get(`user: ${id}`)

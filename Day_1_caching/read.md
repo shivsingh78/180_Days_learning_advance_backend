@@ -21,3 +21,9 @@ SADD users "A" "B"
 Sorted Set (Ranking)
 ZADD leaderboard 100 "Shiv"
  
+ ## Step for creating redis
+ 1. create folder
+ 2. install package 
+ 3. project structure
+ 4. install redis on your system 
+ 5. create file server.js
