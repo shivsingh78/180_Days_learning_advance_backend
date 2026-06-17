@@ -17,8 +17,11 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            sudo git -C /root/180_Days_learning_advance_backend pull
+            script: |
+             cd /home/ubuntu/180_Days_learning_advance_backend
 
-            cd /root/180_Days_learning_advance_backend/Day-3-github-action
 
-            sudo docker compose up -d --build
+             git pull
+             cd Day-3-github-action
+           
+             docker compose up -d --build
